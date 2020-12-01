@@ -130,20 +130,6 @@ opacity:0;
     width: 60px;
     height: 20px;
 }
-.ex-12-button:hover .ex-12-top-white{
-  animation:plutotop 2s linear;
-}
-@keyframes plutotop  {
-  0%   {left:10%;}
-  50%  {right:calc(100% - 60px;)}
-}
-.ex-12-bottom-white:hover{
-  animation:plutobottom 2s linear;
-}
-@keyframes plutobottom {
-  0%   { right:0;}
-  100%  {left:calc(100% - 60px);}
-}
 
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -152,4 +138,11 @@ opacity:0;
     background: green;
     width: 60px;
     height: 20px;
+}
+.ex-12-button:hover .ex-12-top-white{
+  animation:plutotop 2s linear;
+}
+@keyframes plutotop  {
+  0%   {left:10%;}
+  50%  {right:calc(100% - 60px;)}
 }
