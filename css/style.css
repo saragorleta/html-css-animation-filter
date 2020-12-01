@@ -21,7 +21,7 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition:border-radius 10s 5s;
+    transition:all 2s;
 }
 .ex-3-square:hover{
   border-radius:50%;
@@ -31,10 +31,10 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition:display 10s 10s;
+    transition:all 2s;
 }
 .ex-4-square:hover{
- display:none;
+opacity:0;
 }
 .ex-5-square {
     margin: 20px;
@@ -105,7 +105,7 @@
     animation:giro 2s;
 }
 @keyframes giro{
-  0%{transform:rotate(0deg);}
+  0% {transform:rotate(0deg);}
   85%{transform:rotate(290deg);}
   100%{transform:rotate(0deg);}
 }
@@ -126,19 +126,19 @@
     position: absolute;
     top: -10px;
     left: 10%;
-    background: #f5f5f5;
+    background: green;
     width: 60px;
     height: 20px;
 }
-.ex-12-top-white:hover{
-  animation:plutotop 5s linear;
+.ex-12-button:hover .ex-12-top-white{
+  animation:plutotop 2s linear;
 }
 @keyframes plutotop  {
-  0%   { left:0;}
-  100%  {right:calc(100% - 60px);}
+  0%   {left:10%;}
+  50%  {right:calc(100% - 60px;)}
 }
 .ex-12-bottom-white:hover{
-  animation:plutobottom 2s;
+  animation:plutobottom 2s linear;
 }
 @keyframes plutobottom {
   0%   { right:0;}
@@ -149,7 +149,7 @@
     position: absolute;
     bottom: -10px;
     right: 20%;
-    background: #f5f5f5;
+    background: green;
     width: 60px;
     height: 20px;
 }
