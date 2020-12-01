@@ -21,10 +21,10 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition:border 10s 5s;
+    transition:border-radius 10s 5s;
 }
 .ex-3-square:hover{
-  border-radius:100%;
+  border-radius:50%;
 }
 
 .ex-4-square {
@@ -131,18 +131,18 @@
     height: 20px;
 }
 .ex-12-top-white:hover{
-  animation:plutotop 5s;
+  animation:plutotop 5s linear;
 }
 @keyframes plutotop  {
   0%   { left:0;}
-  100%  {right:300px;}
+  100%  {right:calc(100% - 60px);}
 }
 .ex-12-bottom-white:hover{
   animation:plutobottom 2s;
 }
 @keyframes plutobottom {
   0%   { right:0;}
-  100%  {left:300px;}
+  100%  {left:calc(100% - 60px);}
 }
 
 .ex-12-bottom-white, .ex-13-bottom-white {
